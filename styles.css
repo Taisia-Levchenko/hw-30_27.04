@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 600px;
+    height: 600px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    animation-name: color;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+}
+@keyframes color {
+    0% {
+        background-color: red;
+        transform: translate(0);
+    }
+    25% {
+        background-color: blue;
+        transform: translateY(200px);
+    }
+    50% {
+        background-color: green;
+        transform: translate(200px, 200px);
+    }
+    75% {
+        background-color: yellow;
+        transform: translate(200px, 0);
+    }
+    100% {
+        background-color: red;
+        transform: translateX(0);
+    }
+}
+/* @keyframes spin {
+    0% {
+        background-color: red;
+        transform: translateX(-200px);
+    }
+
+    25% {
+        background-color: blue;
+        transform: translateX(200px);
+    }
+
+    50% {
+        background-color: green;
+        transform: translate(200px, 200px);
+    }
+
+    75% {
+        background-color: yellow;
+        transform: translate(-200px, 200px);
+    }
+
+    100% {
+        background-color: red;
+        transform: translateX(-200px);
+    }
+} */
